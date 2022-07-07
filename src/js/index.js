@@ -3,10 +3,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 //include your index.scss file into the bundle
-import "src/styles/index.css";
+import "../styles/index.css";
 
 //import your own components
-import { Home } from "src/js/component/home.js";
+import { Counter } from "../component/Counter.jsx";
 
 var countZero = 0;
 
@@ -16,7 +16,7 @@ function counterApp() {
 	var splitNumber = numberZero.slice(-6);
 
 	ReactDOM.render(
-		<Home
+		<Counter
 			props1={splitNumber.charAt(0)}
 			props2={splitNumber.charAt(1)}
 			props3={splitNumber.charAt(2)}

@@ -2,11 +2,11 @@ import PropTypes from "prop-types";
 import React from "react";
 
 //create your first component
-export function Home(props) {
+export function Counter(props) {
 	console.log(props.counter);
 	return (
 		<div className="container text-center mt-5">
-			<h1>SIMPLE COUNTER</h1>
+			<h1>SIMPLE COUNTER ON REACT</h1>
 			<div className="row">
 				<div className="col square text-white bg-dark">
 					{props.props1}
